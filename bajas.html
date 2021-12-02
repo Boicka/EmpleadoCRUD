@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Bajas por ID de Empleado</title>
+</head>
+<body>
+    <h1>Bajas por ID de Empleado</h1>
+    <nav class="navbar navbar-dark bg-primary">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+            <li><a href="altas.html">Altas</a></li>
+            <li><a href="bajas.html">Bajas</a></li>
+            <li><a href="cambios.html">Cambios</a></li>
+        </ul>
+    </nav>
+    <form name="formulario3" action="controladores/BajaEmpleado.php" method="POST">
+        <ul>
+            <li>
+                <label for="id">Id</label>
+                <input type="text" name="id" id= "id" required>
+            </li>
+            <li>
+                <input type="submit" value="Enviar">
+            </li>
+        </ul>
+    </form>
+</body>
+<footer>
+    <div >
+        <p>&copy; HMEDEL - 2021</p>
+    </div>
+</footer>
+</html>

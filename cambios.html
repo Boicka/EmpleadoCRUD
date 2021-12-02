@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Cambios de Empleado</title>
+</head>
+<body>
+    <h1>Cambios de Empleado</h1>
+    <nav class="navbar navbar-dark bg-primary">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+            <li><a href="altas.html">Altas</a></li>
+            <li><a href="bajas.html">Bajas</a></li>
+            <li><a href="cambios.html">Cambios</a></li>
+        </ul>
+    </nav>
+    <form name="formulario4" action="controladores/ModificaEmpleado.php" method="POST">
+        <ul>
+            <li>
+                <label for="id">Id</label>
+                <input type="text" name="id" id= "id" required>
+            </li>
+            <li>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id= "nombre" required>
+            </li>
+            <li>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id= "apellidos" required>
+            </li>
+            <li>
+                <label for="sueldo">Sueldo</label>
+                <input type="number" name="sueldo" id= "sueldo" required>
+            </li>
+            <li>
+                <input type="submit" value="Enviar">
+            </li>
+        </ul>
+    </form>
+</body>
+<footer>
+    <div >
+        <p>&copy; HMEDEL - 2021</p>
+    </div>
+</footer>
+</html>
