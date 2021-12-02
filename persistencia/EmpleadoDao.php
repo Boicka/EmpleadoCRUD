@@ -7,7 +7,7 @@ class EmpleadoDao{
     servidor*/
     private $server = "localhost";
     private $usr = "root";
-    private $pass = "";
+    private $pass = "root";
     private $db = "empresa";
 
     //Método para conectar a la base de datos y poder hacer transacciones de todo tipo permitidas
